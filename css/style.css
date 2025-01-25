@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Logo Sekolah */
+.logo {
+  height: 40px; /* Sesuaikan dengan kebutuhan Anda */
+  width: auto; /* Biarkan lebar otomatis untuk mempertahankan rasio aspek */
+  max-height: 100%; /* Pastikan logo tidak melebihi tinggi navbar */
+  max-width: 100%; /* Pastikan logo tidak melebihi lebar navbar */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff !important;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Placeholder Images */
+img[src="https://via.placeholder.com/300"]
+{
+  transition: opacity 0.3s ease;
+}
+
+img[src="https://via.placeholder.com/300"]:hover
+{
+  opacity: 0.8;
+}
+
+/* Beranda */
+#beranda {
+  background-image: url("../assets/img/main.jpg"); /* Ganti dengan URL gambar Anda */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#beranda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.75); /* Warna biru dengan opasitas 50% */
+  z-index: 1;
+}
+
+#beranda .container {
+  position: relative;
+  z-index: 2;
+}
+
+#beranda h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#beranda p {
+  font-size: 1.5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#beranda .btn-light {
+  background-color: rgba(255, 255, 255, 0.8); /* Tombol dengan opasitas 80% */
+  border-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#beranda .btn-light:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Tombol dengan opasitas 100% saat hover */
+  border-color: rgba(255, 255, 255, 1);
+}
