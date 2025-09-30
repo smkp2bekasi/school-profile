@@ -1,0 +1,22 @@
+{
+  "name": "school-profile",
+  "version": "1.0.0",
+  "description": "School Website for SMKS Patriot 2",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": ["school", "website", "bootstrap", "jquery"],
+  "author": "SMKS Patriot 2",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
